@@ -1,7 +1,5 @@
 export interface State {
   theme: string;
-  genreId: string;
-  token: string;
 }
 
 export interface Action {

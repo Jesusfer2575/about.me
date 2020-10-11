@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import meImage from '../../assets/img/me.jpg';
 import { useStyles } from './Avatar.styles';
 
-export default function ImageAvatars() {
+const AvatarComponent: React.FC = () => {
   const classes = useStyles();
   const redirectToWizeline = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -19,19 +19,19 @@ export default function ImageAvatars() {
     <Grid className={classes.root} container spacing={0} direction="column" alignItems="center" justify="center">
       <Grid item xs={12}>
         <div className={classes.avatar}>
-          <Avatar alt="Remy Sharp" src={meImage} className={classes.large} variant="circle" srcSet={meImage} />
+          <Avatar alt="Remy Sharp" src={meImage} className={classes.large} variant="circle" />
         </div>
       </Grid>
       <Grid item xs={12}>
         <div className={classes.section2}>
-          <Typography variant="h3" gutterBottom align="center">
+          <Typography variant="h3" gutterBottom align="center" color="secondary">
             Adrián Fernández Ramírez
           </Typography>
         </div>
       </Grid>
       <Grid item xs={12}>
         <div className={classes.section3}>
-          <Typography variant="h6" gutterBottom align="center">
+          <Typography variant="h6" gutterBottom align="center" color="secondary">
             {`Currently working at `}
             <Link href="https://www.wizeline.com/" onClick={redirectToWizeline} color="inherit">
               @Wizeline
@@ -45,4 +45,6 @@ export default function ImageAvatars() {
       </Grid>
     </Grid>
   );
-}
+};
+
+export default AvatarComponent;

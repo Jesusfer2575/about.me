@@ -7,6 +7,8 @@ import backgroundImage from '../../assets/img/bg7.jpg';
 //   align-items: center;
 //   justify-content: center;
 //   text-align: center;
+//   const { theme } = useUserPreferenceContext();
+//   const currentTheme = theme === 'light' ? lightTheme : darkTheme;
 // `;
 
 export const DivContainer = styled.div`
@@ -15,8 +17,6 @@ export const DivContainer = styled.div`
 `;
 
 export const BackGroundImg = styled.div`
-  border: 1px solid #000;
-  background-color: #000000;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(${backgroundImage});
   background-size: cover;
   background-position: top center;

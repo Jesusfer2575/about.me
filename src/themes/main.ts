@@ -4,11 +4,18 @@ export const lightTheme = createMuiTheme({
   palette: {
     type: 'light',
     primary: {
-      main: '#000',
+      main: '#7A1DDE',
     },
     secondary: {
-      main: '#80DEEA',
+      main: '#FFFFFF',
     },
+    background: {
+      paper: '#424242',
+    },
+    text: {
+      primary: '#FFFFFF',
+    },
+    divider: '#6C6B6B',
   },
 });
 
@@ -16,10 +23,16 @@ export const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: '#E0F7FA',
+      main: '#EC4F4F',
     },
     secondary: {
-      main: '#FF1744',
+      main: '#FFFFFF',
+    },
+    background: {
+      paper: '#424242',
+    },
+    text: {
+      primary: '#FFFFFF',
     },
   },
 });
