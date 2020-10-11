@@ -37,7 +37,7 @@ const AvatarComponent: React.FC = () => {
               @Wizeline
             </Link>
             {`. Software Engineer who loves all the related stuff with computer science.
-            Currently considering myself a Fullstack developer.
+            I consider myself a Fullstack developer.
             I'm a React fan so this is why this site is built on that technology.
             Also, I'm TypeScript/Unit tester enthusiastic and competitive programmer amateur.`}
           </Typography>
