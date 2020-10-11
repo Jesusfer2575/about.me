@@ -16,7 +16,8 @@ export const DivContainer = styled.div`
 
 export const BackGroundImg = styled.div`
   border: 1px solid #000;
-  background-image: url(${backgroundImage});
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(${backgroundImage});
   background-size: cover;
   background-position: top center;
   height: 100vh;
