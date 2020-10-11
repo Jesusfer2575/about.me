@@ -19,7 +19,7 @@ const AvatarComponent: React.FC = () => {
     <Grid className={classes.root} container spacing={0} direction="column" alignItems="center" justify="center">
       <Grid item xs={12}>
         <div className={classes.avatar}>
-          <Avatar alt="Remy Sharp" src={meImage} className={classes.large} variant="circle" />
+          <Avatar alt="Ad Fernadez" src={meImage} className={classes.large} variant="circle" />
         </div>
       </Grid>
       <Grid item xs={12}>

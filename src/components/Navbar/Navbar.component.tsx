@@ -21,10 +21,16 @@ interface NavbarProps {
   toggleDrawer: Dispatch<SetStateAction<boolean>>;
 }
 
+const email = 'ing.adrian94fdz@gmail.com';
+
 const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
   const classes = useStyles();
   const { theme, setInverseTheme } = useUserPreferencesContext();
   const [isSwitchOn, setIsSwitchOn] = useState(theme === 'dark' ? true : false);
+
+  const handleAlert = () => {
+    alert(email);
+  };
 
   const handleChange = () => {
     theme === 'light' ? setInverseTheme('dark') : setInverseTheme('light');
@@ -52,7 +58,6 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
             <FormControlLabel
               control={<Switch color="primary" checked={isSwitchOn} onChange={handleChange} />}
               label="Switch theme"
-              color="inherit"
             />
 
             <div className={classes.icon}>
@@ -77,8 +82,8 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
               >
                 <GitHubIcon />
               </IconButton>
-              <Tooltip title="ing.adrian94fdz@gmail.com">
-                <IconButton color="primary" aria-label="email">
+              <Tooltip title={email}>
+                <IconButton color="primary" aria-label="email" onClick={handleAlert}>
                   <EmailIcon />
                 </IconButton>
               </Tooltip>

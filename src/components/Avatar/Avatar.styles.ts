@@ -23,7 +23,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     large: {
       width: theme.spacing(27),
       height: theme.spacing(27),
-      boxShadow: `0 0 0 3px #fff`,
+      boxShadow: `0 0 0 3px ${theme.palette.primary.main}`,
     },
     section1: {
       margin: theme.spacing(3, 2),
