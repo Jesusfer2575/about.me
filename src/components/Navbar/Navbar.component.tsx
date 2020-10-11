@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import AppBar from '@material-ui/core/AppBar';
@@ -12,7 +12,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { useStyles } from './Navbar.styles';
 import { Grid } from '@material-ui/core';
 
-export default function ButtonAppBar() {
+interface NavbarProps {
+  toggleDrawer: Dispatch<SetStateAction<boolean>>;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
   const classes = useStyles();
 
   return (
@@ -20,7 +24,13 @@ export default function ButtonAppBar() {
       <Grid container justify="center">
         <AppBar position="static" color="transparent" elevation={0}>
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton
+              edge="start"
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="menu"
+              onClick={() => toggleDrawer(true)}
+            >
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
@@ -32,9 +42,9 @@ export default function ButtonAppBar() {
               </IconButton>
               <IconButton
                 aria-label="instagram.com"
-                onClick={() => window.open('https://www.instagram.com/adfernvndez/?hl=es')}
+                onClick={() => window.open('https://www.linkedin.com/in/adri%C3%A1n-fern%C3%A1ndez-aa5b78a4/')}
               >
-                <InstagramIcon />
+                <LinkedInIcon />
               </IconButton>
               <IconButton
                 aria-label="github.com"
@@ -48,4 +58,6 @@ export default function ButtonAppBar() {
       </Grid>
     </div>
   );
-}
+};
+
+export default Navbar;

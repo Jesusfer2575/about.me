@@ -4,14 +4,17 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      minHeight: '50vh',
+      [theme.breakpoints.up('lg')]: {
+        paddingTop: 100,
+      },
+    },
+    avatar: {
       display: 'flex',
       '& > *': {
         margin: theme.spacing(1),
       },
       margin: theme.spacing(3, 2),
-    },
-    gridMinHeight: {
-      minHeight: '50vh',
     },
     small: {
       width: theme.spacing(3),
@@ -20,6 +23,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     large: {
       width: theme.spacing(27),
       height: theme.spacing(27),
+      boxShadow: `0 0 0 3px #fff`,
     },
     section1: {
       margin: theme.spacing(3, 2),
@@ -29,8 +33,10 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     section3: {
       margin: theme.spacing(2),
-      marginLeft: 500,
-      marginRight: 500,
+      [theme.breakpoints.up('lg')]: {
+        marginLeft: 500,
+        marginRight: 500,
+      },
     },
   })
 );
