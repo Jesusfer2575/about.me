@@ -1,4 +1,4 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core';
 
 export const lightTheme = createMuiTheme({
   palette: {
@@ -18,8 +18,6 @@ export const lightTheme = createMuiTheme({
     divider: '#6C6B6B',
   },
 });
-
-// lightTheme = responsiveFontSizes(lightTheme);
 
 lightTheme.typography.h3 = {
   fontSize: '3rem',
@@ -63,7 +61,6 @@ export const darkTheme = createMuiTheme({
   },
 });
 
-// darkTheme = responsiveFontSizes(darkTheme);
 darkTheme.typography.h3 = {
   fontSize: '3rem',
   fontWeight: 'normal',
