@@ -22,4 +22,9 @@ export const BackGroundImg = styled.div`
   background-position: top center;
   height: 100vh;
   padding-bottom: 1000px;
+  @media (max-width: 992px) {
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 1300px;
+  }
 `;

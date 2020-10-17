@@ -1,6 +1,6 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 
-export let lightTheme = createMuiTheme({
+export const lightTheme = createMuiTheme({
   palette: {
     type: 'light',
     primary: {
@@ -19,30 +19,33 @@ export let lightTheme = createMuiTheme({
   },
 });
 
-lightTheme = responsiveFontSizes(lightTheme);
+// lightTheme = responsiveFontSizes(lightTheme);
 
-// lightTheme.typography.h3 = {
-//   fontSize: '3rem',
-//   [lightTheme.breakpoints.down('md')]: {
-//     fontSize: '1.5rem',
-//   },
-// };
+lightTheme.typography.h3 = {
+  fontSize: '3rem',
+  fontWeight: 'normal',
+  [lightTheme.breakpoints.down('md')]: {
+    fontSize: '1.5rem',
+  },
+};
 
-// lightTheme.typography.h6 = {
-//   fontSize: '1.25rem',
-//   [lightTheme.breakpoints.down('md')]: {
-//     fontSize: '0.9rem',
-//   },
-// };
+lightTheme.typography.h6 = {
+  fontSize: '1.25rem',
+  fontWeight: 'normal',
+  [lightTheme.breakpoints.down('md')]: {
+    fontSize: '0.9rem',
+  },
+};
 
-// lightTheme.typography.subtitle1 = {
-//   fontSize: '1rem',
-//   [lightTheme.breakpoints.down('md')]: {
-//     fontSize: '0.9rem',
-//   },
-// };
+lightTheme.typography.subtitle1 = {
+  fontSize: '1rem',
+  fontWeight: 'normal',
+  [lightTheme.breakpoints.down('md')]: {
+    fontSize: '0.9rem',
+  },
+};
 
-export let darkTheme = createMuiTheme({
+export const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
@@ -60,24 +63,27 @@ export let darkTheme = createMuiTheme({
   },
 });
 
-darkTheme = responsiveFontSizes(darkTheme);
-// darkTheme.typography.h3 = {
-//   fontSize: '3rem',
-//   [lightTheme.breakpoints.down('md')]: {
-//     fontSize: '1.5rem',
-//   },
-// };
+// darkTheme = responsiveFontSizes(darkTheme);
+darkTheme.typography.h3 = {
+  fontSize: '3rem',
+  fontWeight: 'normal',
+  [lightTheme.breakpoints.down('md')]: {
+    fontSize: '1.5rem',
+  },
+};
 
-// darkTheme.typography.h6 = {
-//   fontSize: '1.25rem',
-//   [lightTheme.breakpoints.down('md')]: {
-//     fontSize: '0.9rem',
-//   },
-// };
+darkTheme.typography.h6 = {
+  fontSize: '1.25rem',
+  fontWeight: 'normal',
+  [lightTheme.breakpoints.down('md')]: {
+    fontSize: '0.9rem',
+  },
+};
 
-// darkTheme.typography.subtitle1 = {
-//   fontSize: '1rem',
-//   [lightTheme.breakpoints.down('md')]: {
-//     fontSize: '0.9rem',
-//   },
-// };
+darkTheme.typography.subtitle1 = {
+  fontSize: '1rem',
+  fontWeight: 'normal',
+  [lightTheme.breakpoints.down('md')]: {
+    fontSize: '0.9rem',
+  },
+};
