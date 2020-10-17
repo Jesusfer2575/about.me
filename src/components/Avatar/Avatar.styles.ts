@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     root: {
       minHeight: '50vh',
       [theme.breakpoints.up('lg')]: {
-        paddingTop: 100,
+        paddingTop: 50,
       },
     },
     avatar: {
@@ -34,8 +34,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     section3: {
       margin: theme.spacing(2),
       [theme.breakpoints.up('lg')]: {
-        marginLeft: 500,
-        marginRight: 500,
+        marginLeft: 300,
+        marginRight: 300,
       },
     },
   })

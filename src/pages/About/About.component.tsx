@@ -20,7 +20,7 @@ const About: React.FC = () => {
     <Grid className={classes.root} container spacing={0} direction="column" alignItems="center" justify="center">
       <Grid item xs={12}>
         <div className={classes.section1}>
-          <Typography variant="h2">About me</Typography>
+          <Typography variant="h3">About me</Typography>
         </div>
       </Grid>
       <Grid item xs={12}>

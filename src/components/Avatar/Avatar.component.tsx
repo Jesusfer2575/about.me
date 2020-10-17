@@ -38,8 +38,8 @@ const AvatarComponent: React.FC = () => {
             </Link>
             {`. Software Engineer who loves all the related stuff with computer science.
             I consider myself a Fullstack developer.
-            I'm a React fan so this is why this site has been built on that technology.
-            Also, I'm TypeScript/Unit tester enthusiastic and competitive programmer amateur.`}
+            I'm a React and JavaScript fan (this is why this site has been built on that technology).
+            Also, I'm TypeScript enthusiastic and competitive programmer amateur.`}
           </Typography>
         </div>
       </Grid>

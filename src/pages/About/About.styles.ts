@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     root: {
       minHeight: '50vh',
       [theme.breakpoints.up('lg')]: {
-        paddingTop: 100,
+        paddingTop: 50,
       },
     },
     small: {
@@ -21,22 +21,22 @@ export const useStyles = makeStyles((theme: Theme) =>
     section1: {
       margin: theme.spacing(3, 2),
       [theme.breakpoints.up('lg')]: {
-        marginLeft: 500,
-        marginRight: 500,
+        marginLeft: 300,
+        marginRight: 300,
       },
     },
     section2: {
       margin: theme.spacing(3),
       [theme.breakpoints.up('lg')]: {
-        marginLeft: 500,
-        marginRight: 500,
+        marginLeft: 300,
+        marginRight: 300,
       },
     },
     section3: {
       margin: theme.spacing(1),
       [theme.breakpoints.up('lg')]: {
-        marginLeft: 500,
-        marginRight: 500,
+        marginLeft: 300,
+        marginRight: 300,
       },
     },
   })

@@ -21,4 +21,5 @@ export const BackGroundImg = styled.div`
   background-size: cover;
   background-position: top center;
   height: 100vh;
+  padding-bottom: 1000px;
 `;
