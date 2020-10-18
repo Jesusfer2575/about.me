@@ -27,6 +27,10 @@ const Menu: React.FC<MenuProps> = ({ toggleDrawer, open }: MenuProps) => {
           <ListItem button onClick={() => push('/about')}>
             <ListItemText primary="About" />
           </ListItem>
+          <Divider />
+          <ListItem button onClick={() => push('/setup')}>
+            <ListItemText primary="My setup" />
+          </ListItem>
         </List>
       </div>
     </Drawer>
