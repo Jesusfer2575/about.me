@@ -30,7 +30,11 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     tabs: {
       backgroundColor: theme.palette.background.paper,
-      width: '700',
+      width: 345,
+      [theme.breakpoints.up('lg')]: {
+        width: 500,
+        height: 'auto',
+      },
     },
   })
 );
