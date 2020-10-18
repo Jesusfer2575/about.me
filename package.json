@@ -12,7 +12,6 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@types/react-swipeable-views": "^0.13.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -46,7 +45,6 @@
   "devDependencies": {
     "@types/material-ui": "^0.21.8",
     "@types/react-router-dom": "^5.1.6",
-    "@types/react-tap-event-plugin": "0.0.30",
     "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "4.0.1",
     "@typescript-eslint/parser": "4.0.1",
