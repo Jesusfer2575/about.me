@@ -15,6 +15,10 @@ const About: React.FC = () => {
     event.preventDefault();
     window.open('https://www.wizeline.com/');
   };
+  const redirecToSpotify = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.open('https://open.spotify.com/album/4tT0Q3gUNBxsrplsfqM5Kh?si=V6bDC_dMRv6NjQdCnIIY5Q');
+  };
 
   return (
     <Grid className={classes.root} container spacing={0} direction="column" alignItems="center" justify="center">
@@ -69,6 +73,17 @@ const About: React.FC = () => {
               Codeforces, Leetcode, etc.), I do have a study group in Wizeline CDMX which consists of 
               solve this kind of problems every Friday, finally I've participated as mentor on the React 
               Certification on Wizeline Academy Program.`}
+          </Typography>
+        </div>
+      </Grid>
+      <Grid item xs={12}>
+        <div className={classes.section2}>
+          <Typography variant="subtitle1" gutterBottom>
+            {`Since I was 14 I started to learn to play the guitar. In 2019 I formed a band called 
+            Cosmonaut of instrumental progressive rock. You can hear my music `}
+            <Link color="primary" onClick={redirecToSpotify}>
+              @here
+            </Link>
           </Typography>
         </div>
       </Grid>
