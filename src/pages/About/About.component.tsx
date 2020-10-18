@@ -45,7 +45,7 @@ const About: React.FC = () => {
             </Link>
             {` and here I've been using on professional project JavaScript with libraries
             like React, Vue and recently on my last project with Angular on frontend.
-            And in backend I've been using NodeJs with some other technologies, using GraphlQL
+            And in backend I've been using NodeJs with some other technologies, using GraphQL
             to build API's, TypeScript with TypeGraphQL and TypeORM`}
           </Typography>
         </div>
