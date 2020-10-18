@@ -27,20 +27,20 @@ const About: React.FC = () => {
         <div className={classes.section2}>
           <Typography variant="subtitle1" gutterBottom>
             {`Bachelor degree in Computer Systems Engineer, graduated from the Escuela Superior de Cómputo - 
-            Instituto Politécnico Nacional.`}
+            Instituto Politécnico Nacional, Mexico City.`}
           </Typography>
         </div>
       </Grid>
       <Grid item xs={12}>
         <div className={classes.section2}>
           <Typography variant="subtitle1" gutterBottom>
-            {`With more than five years of professional experience as a Software Developer, 
+            {`I have more than six years of professional experience as a Software Engineer, 
             I love to keep learning new things, especially new programming technologies. 
-            Most of my career I've been using .NET technoliges with C# as main language.`}
+            Most of my career I've been using .NET/.NET Core technoliges with C# as main language.`}
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
-            {`Now I work as software enginer `}
-            <Link href="https://www.wizeline.com/" onClick={redirectToWizeline} color="inherit">
+            {`Now I work as software enginer at `}
+            <Link color="primary" href="https://www.wizeline.com/" onClick={redirectToWizeline}>
               @Wizeline
             </Link>
             {` and here I've been using on professional project JavaScript with libraries
@@ -54,7 +54,7 @@ const About: React.FC = () => {
         <div className={classes.section2}>
           <Typography variant="subtitle1" gutterBottom>
             {`I have worked for `}
-            <Link onClick={redirectToIdom} color="inherit">
+            <Link color="primary" onClick={redirectToIdom}>
               @Idom Ingeniería
             </Link>
             {` as IT Consultant having client from government dependencies as the Secretaría de Economía.
@@ -65,9 +65,10 @@ const About: React.FC = () => {
       <Grid item xs={12}>
         <div className={classes.section2}>
           <Typography variant="subtitle1" gutterBottom>
-            {`On my free time, I loves to solve competitive programming problems (Codechef, COJ, 
-              Codeforces, etc.), I do have a study group in wizeline CDMX which consists of 
-              solve this kind of problems every Friday.`}
+            {`On my free time, I love to solve competitive programming problems (from Codechef, COJ, 
+              Codeforces, Leetcode, etc.), I do have a study group in Wizeline CDMX which consists of 
+              solve this kind of problems every Friday, finally I've participated as mentor on the React 
+              Certification on Wizeline Academy Program.`}
           </Typography>
         </div>
       </Grid>

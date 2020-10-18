@@ -33,12 +33,13 @@ const AvatarComponent: React.FC = () => {
         <div className={classes.section3}>
           <Typography variant="h6" gutterBottom align="center" color="secondary">
             {`Currently working at `}
-            <Link href="https://www.wizeline.com/" onClick={redirectToWizeline} color="inherit">
+            <Link href="https://www.wizeline.com/" onClick={redirectToWizeline} color="primary">
               @Wizeline
             </Link>
             {`. Software Engineer who loves all the related stuff with computer science.
-            I consider myself a Fullstack developer.
-            I'm a React and JavaScript fan (this is why this site has been built on that technology).
+            Mostly web developer, fullstack.
+            I'm React fan (this site was developed in React), so I try to use it as far as I can.
+            Last year trying Node Js on backed.
             Also, I'm TypeScript enthusiastic and competitive programmer amateur.`}
           </Typography>
         </div>
