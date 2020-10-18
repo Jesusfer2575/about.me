@@ -9,13 +9,17 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import EmailIcon from '@material-ui/icons/Email';
-import Tooltip from '@material-ui/core/Tooltip';
+import Snackbar, { SnackbarOrigin } from '@material-ui/core/Snackbar';
 
 import { useStyles } from './Navbar.styles';
 import { Grid } from '@material-ui/core';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import useUserPreferencesContext from '../../store/UserPreferences/useUserPreferencesContext';
+
+export interface State extends SnackbarOrigin {
+  open: boolean;
+}
 
 interface NavbarProps {
   toggleDrawer: Dispatch<SetStateAction<boolean>>;
@@ -27,9 +31,19 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
   const classes = useStyles();
   const { theme, setInverseTheme } = useUserPreferencesContext();
   const [isSwitchOn, setIsSwitchOn] = useState(theme === 'dark' ? true : false);
+  const [snackbar, setSnackbar] = useState<State>({
+    open: false,
+    vertical: 'top',
+    horizontal: 'center',
+  });
+  const { vertical, horizontal, open } = snackbar;
 
-  const handleAlert = () => {
-    alert(email);
+  const handleClick = (newState: SnackbarOrigin) => () => {
+    setSnackbar({ open: true, ...newState });
+  };
+
+  const handleClose = () => {
+    setSnackbar({ ...snackbar, open: false });
   };
 
   const handleChange = () => {
@@ -82,11 +96,20 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
               >
                 <GitHubIcon />
               </IconButton>
-              <Tooltip title={email}>
-                <IconButton color="primary" aria-label="email" onClick={handleAlert}>
-                  <EmailIcon />
-                </IconButton>
-              </Tooltip>
+              <IconButton color="primary" aria-label="email">
+                <EmailIcon onClick={handleClick({ vertical: 'top', horizontal: 'center' })} />
+                <Snackbar
+                  anchorOrigin={{ vertical, horizontal }}
+                  open={open}
+                  onClose={handleClose}
+                  ContentProps={{
+                    'aria-describedby': 'email-id',
+                  }}
+                  message={<span id="email-id">{email}</span>}
+                  key={vertical + horizontal}
+                  color="primary"
+                />
+              </IconButton>
             </div>
           </Toolbar>
         </AppBar>
