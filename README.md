@@ -1,22 +1,3 @@
-Hi!
-Here you will find all the instructions needed for this little challenge
-
-The idea of this challenge is to proof some very basics skills about JavaScript and React
-
-## Instructions
-
-Here you will have an environment and all you need to run your app and you component
-
-1. First of all you need to create a whole new component (class or function it's up to you!)
-2. You have to show some data on the component USING JSX
-3. The data you need to show is on the file **mock-pokedata.js** as a Js file
-4. Inside of the mock-pokedata.js file you will find an object **(mockPokemonData)** which contains the information related to that pokemon (the name of the pokemon and two links to the pokemon images) also a string which is a link to a YouTube (charizard) video (and that info is based on the public PokeAPI which you can see with more detail [here]: https://pokeapi.co/)
-5. You need to render on you component the name of the pokemon
-6. You need to render the images of the pokemon so you have to use the <img src= ...> tag to show it
-7. Finally you need to create a link to the Pokemon's video so when you click it, redirects you to the video on YouTube
-8. This component you build should be render on the App.jsx component (passed as a children)
-9. The component you create must live on the PokeCard.jsx component
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
