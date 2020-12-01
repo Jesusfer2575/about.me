@@ -17,7 +17,13 @@ const Menu: React.FC<MenuProps> = ({ toggleDrawer, open }: MenuProps) => {
   const classes = useStyles();
 
   return (
-    <Drawer className={classes.paper} open={open} onClose={() => toggleDrawer(false)}>
+    <Drawer
+      title="hamburguer-menu"
+      id="hamburguer-menu"
+      className={classes.paper}
+      open={open}
+      onClose={() => toggleDrawer(false)}
+    >
       <div role="presentation" onClick={() => toggleDrawer(false)} onKeyDown={() => toggleDrawer(false)}>
         <List>
           <ListItem button onClick={() => push('/')}>
