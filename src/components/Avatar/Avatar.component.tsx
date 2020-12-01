@@ -38,8 +38,7 @@ const AvatarComponent: React.FC = () => {
             </Link>
             {`. Software Engineer who loves all the related stuff with computer science.
             Mostly web developer, fullstack.
-            I'm a React fan (this is why this app was written using 
-            React), so I try to use it as far as I can.
+            I'm a React fan, so I try to use it as far as I can.
             Last year trying Node Js on backed.
             Also, I'm TypeScript enthusiastic and an amateur competitive programmer.`}
           </Typography>
