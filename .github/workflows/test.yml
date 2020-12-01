@@ -1,0 +1,21 @@
+name: Run tests
+
+on:  
+  push:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@develop
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Test
+        run: npm run test
