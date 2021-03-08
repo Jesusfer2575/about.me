@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
               <IconButton
                 color="primary"
                 aria-label="twitter.com"
-                onClick={() => window.open('https://twitter.com/adfernvndez')}
+                onClick={() => window.open('https://twitter.com/_adfernandez')}
               >
                 <TwitterIcon />
               </IconButton>
