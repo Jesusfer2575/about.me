@@ -43,7 +43,7 @@ const Setup: React.FC = () => {
                           <li>Macbook Pro: 2020 13-inch, 2GHz Intel Core i5 4 cores</li>
                           <li>Keyboard Keychron K2</li>
                           <li>Magic mouse</li>
-                          <li>BENQ 1920x1080</li>
+                          <li>Dell 1920x1080</li>
                         </ul>
                       </Typography>
                     </div>

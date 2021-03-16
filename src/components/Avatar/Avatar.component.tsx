@@ -8,6 +8,21 @@ import Typography from '@material-ui/core/Typography';
 import meImage from '../../assets/img/me.jpg';
 import { useStyles } from './Avatar.styles';
 
+interface CenteredTextProps {
+  sectionClass: string;
+  children: React.ReactNode;
+}
+
+const CenteredText: React.FC<CenteredTextProps> = ({ sectionClass, children }: CenteredTextProps) => {
+  return (
+    <div className={sectionClass}>
+      <Typography variant="h6" gutterBottom align="center" color="secondary">
+        {children}
+      </Typography>
+    </div>
+  );
+};
+
 const AvatarComponent: React.FC = () => {
   const classes = useStyles();
   const redirectToWizeline = (event: MouseEvent<HTMLAnchorElement>) => {
@@ -30,19 +45,32 @@ const AvatarComponent: React.FC = () => {
         </div>
       </Grid>
       <Grid item xs={12}>
-        <div className={classes.section3}>
-          <Typography variant="h6" gutterBottom align="center" color="secondary">
+        <CenteredText sectionClass={classes.section3}>
+          <>
             {`Currently working at `}
             <Link href="https://www.wizeline.com/" onClick={redirectToWizeline} color="primary">
               @Wizeline
             </Link>
-            {`. Software Engineer who loves all the related stuff with computer science.
-            Mostly web developer, fullstack
-            I'm a React fan, so I try to use it as far as I can.
-            Last year trying Node Js on backed.
-            Also, I'm TypeScript enthusiastic and an amateur competitive programmer.`}
-          </Typography>
-        </div>
+            {`. Computer science is my profession and passion.
+                I’m a software engineer with more than 6 years of professional experience working with 
+                different teams developing smart solutions on the IT sector.
+                `}
+          </>
+        </CenteredText>
+        <CenteredText sectionClass={classes.section3}>
+          {`
+            I’m experienced in JavaScript/TypeScript, I’ve been involved in professional projects 
+            using React and Angular on frontend and NodeJS, .NET/.NET Core on backend.
+            I’m very passionate about algorithms and competitive programming. 
+          `}
+        </CenteredText>
+        <CenteredText sectionClass={classes.section3}>
+          {`
+              I'm a Go/React fan.
+              I built this site using React.
+              I'm TypeScript enthusiastic.
+            `}
+        </CenteredText>
       </Grid>
     </Grid>
   );

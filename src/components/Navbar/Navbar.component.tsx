@@ -78,21 +78,21 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDrawer }: NavbarProps) => {
               <IconButton
                 color="primary"
                 aria-label="twitter.com"
-                onClick={() => window.open('https://twitter.com/adfernvndez')}
+                onClick={() => window.open('https://twitter.com/fernandzad')}
               >
                 <TwitterIcon />
               </IconButton>
               <IconButton
                 color="primary"
                 aria-label="linkedin.com"
-                onClick={() => window.open('https://www.linkedin.com/in/adri%C3%A1n-fern%C3%A1ndez-aa5b78a4/')}
+                onClick={() => window.open('https://www.linkedin.com/in/fernandzad')}
               >
                 <LinkedInIcon />
               </IconButton>
               <IconButton
                 color="primary"
                 aria-label="github.com"
-                onClick={() => window.open('https://github.com/Jesusfer2575?tab=repositories')}
+                onClick={() => window.open('https://github.com/fernandzad')}
               >
                 <GitHubIcon />
               </IconButton>
